@@ -49,6 +49,7 @@
 
 
 ### High-Level Design
+![image](https://github.com/user-attachments/assets/ec3638db-059d-410a-ba9d-7c0ded981d63)
 
 
 For our high-level design, focusing on getting a simple system up and running that satisfies our core functional requirements by simply following the data flow outlined above.
@@ -84,6 +85,8 @@ Where all the processing happens in details from Document splitting -> document 
 
 
 ### Data Flow / Sequence Diagrams
+![image](https://github.com/user-attachments/assets/87083132-c62b-422f-8d1c-5ad15d679cba)
+
 
 Key components and flow details:
 
@@ -120,6 +123,9 @@ VIP Flow Error Handling:
  - Expedited SLA for manual review
  - Immediate notification to administrators
  - Option for alternative processing paths
+
+![image](https://github.com/user-attachments/assets/22126b2f-f739-4c93-ae39-b704f735c7c9)
+
 
 ### Priority Handling Strategy
 1. VIP Identification Methods
@@ -240,6 +246,10 @@ Example Workflow:
         - Graceful Degradation: Shed non-VIP tasks during overload.
 
 
+![image](https://github.com/user-attachments/assets/99444f16-ad48-4d73-a4c0-f8269b9ccc60)
+
+
+
 ### Reliability & Fault Tolerance
 1. Retry Policies
    1. Implementation:
@@ -280,6 +290,8 @@ Example Workflow:
        - Rollback API for non-idempotent operations (e.g., invoice duplicate payments).
       
 - Possible Flow:
+![image](https://github.com/user-attachments/assets/ff91f503-b239-4892-b5ec-5a325d7b221b)
+
 
 
 ### Observability & Monitoring
